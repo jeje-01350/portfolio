@@ -26,7 +26,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-20 md:pt-0 pb-28 md:pb-10">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -163,7 +163,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 0.6 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-6 left-0 right-0 mx-auto flex flex-col items-center"
       >
         <motion.a
           href="#about"
@@ -172,7 +172,8 @@ export default function Hero() {
           className="flex flex-col items-center text-gray-500 dark:text-gray-400 hover:text-primary-700 dark:hover:text-primary-400 transition-colors duration-300"
         >
           <span className="text-sm mb-2">Découvrir</span>
-          <ChevronDown size={24} />
+          <ChevronDown className="block md:hidden" size={20} />
+          <ChevronDown className="hidden md:block" size={24} />
         </motion.a>
       </motion.div>
     </section>
