@@ -23,6 +23,7 @@ export default function Skills() {
       skills: [
         { name: "Node.js", level: 85 },
         { name: "PHP", level: 75 },
+        { name: "Python", level: 48 },
         { name: "Symfony", level: 70 },
         { name: "Express.js", level: 80 }
       ]
@@ -34,7 +35,6 @@ export default function Skills() {
         { name: "MongoDB", level: 80 },
         { name: "MySQL", level: 85 },
         { name: "PostgreSQL", level: 75 },
-        { name: "Firebase", level: 70 },
         { name: "Supabase", level: 65 }
       ]
     },
